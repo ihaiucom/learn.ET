@@ -1,21 +1,54 @@
 ﻿<Properties StartupConfiguration="{A76ECEBD-FBC2-999C-BFCF-F498A520E3FF}|单元测试">
   <MonoDevelop.Ide.ItemProperties.ETUnity PreferredExecutionTarget="Unity.Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="../../ETClient2/ETUnity/Assets/Scripts/Init.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Init.cs">
     <Files>
-      <File FileName="Assets/Scripts/Base/Log.cs" Line="24" Column="1" />
-      <File FileName="Hotfix/UI/UILogin/Factory/UILoginFactory.cs" Line="16" Column="8" />
-      <File FileName="Hotfix/Module/Config/ConfigHelper.cs" Line="14" Column="24" />
-      <File FileName="Hotfix/UI/UILogin/Component/UILoginComponent.cs" Line="11" Column="3" />
-      <File FileName="Assets/Scripts/Entity/Hotfix.cs" Line="59" Column="37" />
-      <File FileName="Assets/Editor/BuildEditor/BuildEditor.cs" Line="21" Column="12" />
-      <File FileName="Assets/Editor/BuildEditor/BuildIOSEditor.cs" Line="1" Column="1" />
-      <File FileName="Assets/Editor/BuildEditor/BuildHelper.cs" Line="88" Column="84" />
-      <File FileName="../../ETClient2/ETUnity/Assets/Scripts/Init.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Init.cs" Line="35" Column="27" />
+      <File FileName="Assets/Scripts/Entity/Game.cs" Line="54" Column="15" />
+      <File FileName="Assets/Scripts/Entity/Scene.cs" Line="27" Column="9" />
+      <File FileName="Assets/Scripts/Component/GlobalConfigComponent.cs" Line="21" Column="47" />
+      <File FileName="Assets/Scripts/Component/Config/GlobalProto.cs" Line="3" Column="15" />
+      <File FileName="Assets/Scripts/Module/UI/CanvasConfig.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Module/Config/ConfigComponent.cs" Line="27" Column="15" />
+      <File FileName="Assets/Scripts/Module/UI/UIComponent.cs" Line="96" Column="19" />
+      <File FileName="Assets/Scripts/UI/UILoading/Event/LoadingBeginEvent_CreateLoadingUI.cs" Line="3" Column="24" />
+      <File FileName="Assets/Scripts/Helper/BundleHelper.cs" Line="18" Column="18" />
+      <File FileName="Assets/Scripts/Base/Event/EventIdType.cs" Line="21" Column="23" />
+      <File FileName="Assets/Scripts/Other/Define.cs" Line="6" Column="22" />
     </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="ETUnity" expanded="True">
+            <Node name="Assembly-CSharp" expanded="True">
+              <Node name="Scripts" expanded="True">
+                <Node name="Base" expanded="True">
+                  <Node name="Event" expanded="True" />
+                </Node>
+                <Node name="Entity" expanded="True" />
+                <Node name="Helper" expanded="True" />
+                <Node name="Module" expanded="True">
+                  <Node name="Config" expanded="True" />
+                  <Node name="UI" expanded="True" />
+                </Node>
+                <Node name="Other" expanded="True" />
+                <Node name="UI" expanded="True">
+                  <Node name="UILoading" expanded="True">
+                    <Node name="Event" expanded="True" />
+                  </Node>
+                </Node>
+                <Node name="Init.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/zengfeng/workspaces/www/githubpages/learn.ET/learnET3/ETClient/ETUnity/Assets/Scripts/Init.cs" relfile="Assets/Scripts/Init.cs" line="15" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.Assembly-CSharp-firstpass PreferredExecutionTarget="MonoDevelop.Default" />
