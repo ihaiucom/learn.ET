@@ -7,8 +7,21 @@
       <File FileName="App/NLog.xsd" Line="1" Column="1" />
       <File FileName="App/Program.cs" Line="15" Column="1" />
       <File FileName="Model/Component/OptionComponent.cs" Line="17" Column="17" />
-      <File FileName="Model/Other/Options.cs" Line="16" Column="55" />
+      <File FileName="Model/Other/Options.cs" Line="6" Column="2" />
     </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Server" expanded="True">
+            <Node name="Server.Model" expanded="True">
+              <Node name="Other" expanded="True">
+                <Node name="Options.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
