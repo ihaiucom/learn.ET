@@ -7,3 +7,12 @@
 /Users/zengfeng/workspaces/www/githubpages/ET/Server/ThirdParty/MongodbDriver/DotNetCoreDriver/MongoDB.Bson/obj/Debug/MongoDB.Bson.AssemblyInfo.cs
 /Users/zengfeng/workspaces/www/githubpages/ET/Server/ThirdParty/MongodbDriver/DotNetCoreDriver/MongoDB.Bson/obj/Debug/MongoDB.Bson.dll
 /Users/zengfeng/workspaces/www/githubpages/ET/Server/ThirdParty/MongodbDriver/DotNetCoreDriver/MongoDB.Bson/obj/Debug/MongoDB.Bson.pdb
+/Users/zengfeng/workspaces/www/githubpages/learn.ET/learnET3/ETServer/Bin/MongoDB.Bson.deps.json
+/Users/zengfeng/workspaces/www/githubpages/learn.ET/learnET3/ETServer/Bin/MongoDB.Bson.dll
+/Users/zengfeng/workspaces/www/githubpages/learn.ET/learnET3/ETServer/Bin/MongoDB.Bson.pdb
+/Users/zengfeng/workspaces/www/githubpages/learn.ET/learnET3/ETServer/Server/ThirdParty/MongodbDriver/DotNetCoreDriver/MongoDB.Bson/obj/Debug/MongoDB.Bson.csprojResolveAssemblyReference.cache
+/Users/zengfeng/workspaces/www/githubpages/learn.ET/learnET3/ETServer/Server/ThirdParty/MongodbDriver/DotNetCoreDriver/MongoDB.Bson/obj/Debug/MongoDB.Bson.csproj.CoreCompileInputs.cache
+/Users/zengfeng/workspaces/www/githubpages/learn.ET/learnET3/ETServer/Server/ThirdParty/MongodbDriver/DotNetCoreDriver/MongoDB.Bson/obj/Debug/MongoDB.Bson.AssemblyInfoInputs.cache
+/Users/zengfeng/workspaces/www/githubpages/learn.ET/learnET3/ETServer/Server/ThirdParty/MongodbDriver/DotNetCoreDriver/MongoDB.Bson/obj/Debug/MongoDB.Bson.AssemblyInfo.cs
+/Users/zengfeng/workspaces/www/githubpages/learn.ET/learnET3/ETServer/Server/ThirdParty/MongodbDriver/DotNetCoreDriver/MongoDB.Bson/obj/Debug/MongoDB.Bson.dll
+/Users/zengfeng/workspaces/www/githubpages/learn.ET/learnET3/ETServer/Server/ThirdParty/MongodbDriver/DotNetCoreDriver/MongoDB.Bson/obj/Debug/MongoDB.Bson.pdb
