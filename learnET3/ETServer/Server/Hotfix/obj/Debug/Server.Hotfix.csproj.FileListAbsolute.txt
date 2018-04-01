@@ -1,0 +1,8 @@
+/Users/zengfeng/workspaces/www/githubpages/ET/Bin/Hotfix.deps.json
+/Users/zengfeng/workspaces/www/githubpages/ET/Bin/Hotfix.dll
+/Users/zengfeng/workspaces/www/githubpages/ET/Bin/Hotfix.pdb
+/Users/zengfeng/workspaces/www/githubpages/ET/Server/Hotfix/obj/Debug/Server.Hotfix.csproj.CoreCompileInputs.cache
+/Users/zengfeng/workspaces/www/githubpages/ET/Server/Hotfix/obj/Debug/Server.Hotfix.AssemblyInfoInputs.cache
+/Users/zengfeng/workspaces/www/githubpages/ET/Server/Hotfix/obj/Debug/Server.Hotfix.AssemblyInfo.cs
+/Users/zengfeng/workspaces/www/githubpages/ET/Server/Hotfix/obj/Debug/Hotfix.dll
+/Users/zengfeng/workspaces/www/githubpages/ET/Server/Hotfix/obj/Debug/Hotfix.pdb

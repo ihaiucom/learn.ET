@@ -1,0 +1,17 @@
+﻿<Properties StartupConfiguration="{11464C2C-E0B6-476E-ABB1-87445E736B76}|Default">
+  <MonoDevelop.Ide.ItemProperties.Server.App PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Hotfix/Server.Hotfix.csproj">
+    <Files>
+      <File FileName="App/Server.App.csproj" Line="1" Column="1" />
+      <File FileName="Hotfix/Server.Hotfix.csproj" Line="1" Column="1" />
+      <File FileName="Model/Server.Model.csproj" Line="1" Column="1" />
+      <File FileName="Model/Server.Model.csproj.user" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>

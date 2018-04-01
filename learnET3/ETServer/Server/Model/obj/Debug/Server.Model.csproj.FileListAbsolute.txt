@@ -1,0 +1,9 @@
+/Users/zengfeng/workspaces/www/githubpages/ET/Bin/Model.deps.json
+/Users/zengfeng/workspaces/www/githubpages/ET/Bin/Model.dll
+/Users/zengfeng/workspaces/www/githubpages/ET/Bin/Model.pdb
+/Users/zengfeng/workspaces/www/githubpages/ET/Server/Model/obj/Debug/Server.Model.csprojResolveAssemblyReference.cache
+/Users/zengfeng/workspaces/www/githubpages/ET/Server/Model/obj/Debug/Server.Model.csproj.CoreCompileInputs.cache
+/Users/zengfeng/workspaces/www/githubpages/ET/Server/Model/obj/Debug/Server.Model.AssemblyInfoInputs.cache
+/Users/zengfeng/workspaces/www/githubpages/ET/Server/Model/obj/Debug/Server.Model.AssemblyInfo.cs
+/Users/zengfeng/workspaces/www/githubpages/ET/Server/Model/obj/Debug/Model.dll
+/Users/zengfeng/workspaces/www/githubpages/ET/Server/Model/obj/Debug/Model.pdb
