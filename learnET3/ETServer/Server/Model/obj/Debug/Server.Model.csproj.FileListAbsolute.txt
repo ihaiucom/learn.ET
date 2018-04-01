@@ -13,3 +13,6 @@
 /Users/zengfeng/workspaces/www/githubpages/learn.ET/learnET3/ETServer/Server/Model/obj/Debug/Server.Model.AssemblyInfo.cs
 /Users/zengfeng/workspaces/www/githubpages/learn.ET/learnET3/ETServer/Server/Model/obj/Debug/Model.dll
 /Users/zengfeng/workspaces/www/githubpages/learn.ET/learnET3/ETServer/Server/Model/obj/Debug/Model.pdb
+/Users/zengfeng/workspaces/www/githubpages/learn.ET/learnET3/ETServer/Bin/Model.deps.json
+/Users/zengfeng/workspaces/www/githubpages/learn.ET/learnET3/ETServer/Bin/Model.dll
+/Users/zengfeng/workspaces/www/githubpages/learn.ET/learnET3/ETServer/Bin/Model.pdb

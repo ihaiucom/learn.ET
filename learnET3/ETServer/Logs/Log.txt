@@ -50,3 +50,47 @@ File name: '/Users/zengfeng/workspaces/www/githubpages/ET/Server/App/Hotfix.dll'
    at ETModel.EventSystem.Awake[P1,P2](Component component, P1 p1, P2 p2) in /Users/zengfeng/workspaces/www/githubpages/ET/Unity/Assets/Scripts/Base/Object/EventSystem.cs:line 280
 2018-04-01 14:21:13.3666   (Program.cs:26) System.NullReferenceException: Object reference not set to an instance of an object.
    at App.Program.Main(String[] args) in /Users/zengfeng/workspaces/www/githubpages/ET/Server/App/Program.cs:line 26
+2018-04-01 17:31:33.5007   (EventSystem.cs:280) System.IO.DirectoryNotFoundException: Could not find a part of the path '/Users/zengfeng/workspaces/www/githubpages/learn.ET/learnET3/ETServer/Server/Config/StartConfig/LocalAllServer.txt'.
+   at Interop.ThrowExceptionForIoErrno(ErrorInfo errorInfo, String path, Boolean isDirectory, Func`2 errorRewriter)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String path, OpenFlags flags, Int32 mode)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks)
+   at System.IO.File.InternalReadAllText(String path, Encoding encoding)
+   at System.IO.File.ReadAllText(String path)
+   at ETModel.StartConfigComponent.Awake(String path, Int32 appId) in /Users/zengfeng/workspaces/www/githubpages/learn.ET/learnET3/ETServer/Server/Model/Component/StartConfigComponent.cs:line 39
+   at ETModel.StartConfigComponentSystem.Awake(StartConfigComponent self, String a, Int32 b) in /Users/zengfeng/workspaces/www/githubpages/learn.ET/learnET3/ETServer/Server/Model/Component/StartConfigComponent.cs:line 13
+   at ETModel.AwakeSystem`3.Run(Object o, A a, B b) in /Users/zengfeng/workspaces/www/githubpages/learn.ET/learnET3/ETServer/Server/Model/Base/Object/IAwakeSystem.cs:line 69
+   at ETModel.EventSystem.Awake[P1,P2](Component component, P1 p1, P2 p2) in /Users/zengfeng/workspaces/www/githubpages/learn.ET/learnET3/ETServer/Server/Model/Base/Object/EventSystem.cs:line 280
+2018-04-01 17:31:33.8051   (Program.cs:26) System.NullReferenceException: Object reference not set to an instance of an object.
+   at App.Program.Main(String[] args) in /Users/zengfeng/workspaces/www/githubpages/learn.ET/learnET3/ETServer/Server/App/Program.cs:line 26
+2018-04-01 17:35:10.5781   (EventSystem.cs:280) System.IO.DirectoryNotFoundException: Could not find a part of the path '/Users/zengfeng/workspaces/www/githubpages/learn.ET/learnET3/ETServer/Server/Config/StartConfig/LocalAllServer.txt'.
+   at Interop.ThrowExceptionForIoErrno(ErrorInfo errorInfo, String path, Boolean isDirectory, Func`2 errorRewriter)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String path, OpenFlags flags, Int32 mode)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks)
+   at System.IO.File.InternalReadAllText(String path, Encoding encoding)
+   at System.IO.File.ReadAllText(String path)
+   at ETModel.StartConfigComponent.Awake(String path, Int32 appId) in /Users/zengfeng/workspaces/www/githubpages/learn.ET/learnET3/ETServer/Server/Model/Component/StartConfigComponent.cs:line 39
+   at ETModel.StartConfigComponentSystem.Awake(StartConfigComponent self, String a, Int32 b) in /Users/zengfeng/workspaces/www/githubpages/learn.ET/learnET3/ETServer/Server/Model/Component/StartConfigComponent.cs:line 13
+   at ETModel.AwakeSystem`3.Run(Object o, A a, B b) in /Users/zengfeng/workspaces/www/githubpages/learn.ET/learnET3/ETServer/Server/Model/Base/Object/IAwakeSystem.cs:line 69
+   at ETModel.EventSystem.Awake[P1,P2](Component component, P1 p1, P2 p2) in /Users/zengfeng/workspaces/www/githubpages/learn.ET/learnET3/ETServer/Server/Model/Base/Object/EventSystem.cs:line 280
+2018-04-01 17:35:10.8754   (Program.cs:26) System.NullReferenceException: Object reference not set to an instance of an object.
+   at App.Program.Main(String[] args) in /Users/zengfeng/workspaces/www/githubpages/learn.ET/learnET3/ETServer/Server/App/Program.cs:line 26
+2018-04-01 17:35:46.3025   (EventSystem.cs:280) System.IO.DirectoryNotFoundException: Could not find a part of the path '/Users/zengfeng/workspaces/www/githubpages/learn.ET/learnET3/ETServer/Server/Config/StartConfig/LocalAllServer.txt'.
+   at Interop.ThrowExceptionForIoErrno(ErrorInfo errorInfo, String path, Boolean isDirectory, Func`2 errorRewriter)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String path, OpenFlags flags, Int32 mode)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks)
+   at System.IO.File.InternalReadAllText(String path, Encoding encoding)
+   at System.IO.File.ReadAllText(String path)
+   at ETModel.StartConfigComponent.Awake(String path, Int32 appId) in /Users/zengfeng/workspaces/www/githubpages/learn.ET/learnET3/ETServer/Server/Model/Component/StartConfigComponent.cs:line 39
+   at ETModel.StartConfigComponentSystem.Awake(StartConfigComponent self, String a, Int32 b) in /Users/zengfeng/workspaces/www/githubpages/learn.ET/learnET3/ETServer/Server/Model/Component/StartConfigComponent.cs:line 13
+   at ETModel.AwakeSystem`3.Run(Object o, A a, B b) in /Users/zengfeng/workspaces/www/githubpages/learn.ET/learnET3/ETServer/Server/Model/Base/Object/IAwakeSystem.cs:line 69
+   at ETModel.EventSystem.Awake[P1,P2](Component component, P1 p1, P2 p2) in /Users/zengfeng/workspaces/www/githubpages/learn.ET/learnET3/ETServer/Server/Model/Base/Object/EventSystem.cs:line 280
+2018-04-01 17:35:46.6560   (Program.cs:26) System.NullReferenceException: Object reference not set to an instance of an object.
+   at App.Program.Main(String[] args) in /Users/zengfeng/workspaces/www/githubpages/learn.ET/learnET3/ETServer/Server/App/Program.cs:line 26
+2018-04-01 17:36:28.9742 AllServer 001 (Program.cs:39) server start........................ 1 AllServer
+2018-04-01 17:36:29.1162 AllServer 001 (ActorMessageDispatherComponent.cs:40) apptype: AllServer

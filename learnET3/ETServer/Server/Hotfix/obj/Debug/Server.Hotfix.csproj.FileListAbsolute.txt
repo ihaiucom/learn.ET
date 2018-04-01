@@ -6,3 +6,12 @@
 /Users/zengfeng/workspaces/www/githubpages/ET/Server/Hotfix/obj/Debug/Server.Hotfix.AssemblyInfo.cs
 /Users/zengfeng/workspaces/www/githubpages/ET/Server/Hotfix/obj/Debug/Hotfix.dll
 /Users/zengfeng/workspaces/www/githubpages/ET/Server/Hotfix/obj/Debug/Hotfix.pdb
+/Users/zengfeng/workspaces/www/githubpages/learn.ET/learnET3/ETServer/Bin/Hotfix.deps.json
+/Users/zengfeng/workspaces/www/githubpages/learn.ET/learnET3/ETServer/Bin/Hotfix.dll
+/Users/zengfeng/workspaces/www/githubpages/learn.ET/learnET3/ETServer/Bin/Hotfix.pdb
+/Users/zengfeng/workspaces/www/githubpages/learn.ET/learnET3/ETServer/Server/Hotfix/obj/Debug/Server.Hotfix.csprojResolveAssemblyReference.cache
+/Users/zengfeng/workspaces/www/githubpages/learn.ET/learnET3/ETServer/Server/Hotfix/obj/Debug/Server.Hotfix.csproj.CoreCompileInputs.cache
+/Users/zengfeng/workspaces/www/githubpages/learn.ET/learnET3/ETServer/Server/Hotfix/obj/Debug/Server.Hotfix.AssemblyInfoInputs.cache
+/Users/zengfeng/workspaces/www/githubpages/learn.ET/learnET3/ETServer/Server/Hotfix/obj/Debug/Server.Hotfix.AssemblyInfo.cs
+/Users/zengfeng/workspaces/www/githubpages/learn.ET/learnET3/ETServer/Server/Hotfix/obj/Debug/Hotfix.dll
+/Users/zengfeng/workspaces/www/githubpages/learn.ET/learnET3/ETServer/Server/Hotfix/obj/Debug/Hotfix.pdb
