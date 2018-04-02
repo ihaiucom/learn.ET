@@ -2,17 +2,22 @@
 
 namespace ETModel
 {
+    /// <summary>
+    /// 保存key到队列里的字典
+    /// </summary>
 	public class QueueDictionary<T, K>
 	{
 		private readonly List<T> list = new List<T>();
 		private readonly Dictionary<T, K> dictionary = new Dictionary<T, K>();
 
+        //添加到队列
 		public void Enqueue(T t, K k)
 		{
 			this.list.Add(t);
 			this.dictionary.Add(t, k);
 		}
 
+        //从队列中移除第一个
 		public void Dequeue()
 		{
 			if (this.list.Count == 0)

@@ -3,6 +3,9 @@ using System.Collections.Generic;
 
 namespace ETModel
 {
+    /// <summary>
+    /// key和val可以相互快速双向查询获取的字
+    /// </summary>
 	public class DoubleMap<K, V>
 	{
 		private readonly Dictionary<K, V> kv = new Dictionary<K, V>();

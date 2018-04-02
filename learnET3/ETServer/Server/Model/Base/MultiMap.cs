@@ -3,11 +3,15 @@ using System.Linq;
 
 namespace ETModel
 {
+    /// <summary>
+    /// 存储同类型值列表的一个字典
+    /// </summary>
 	public class MultiMap<T, K>
 	{
 		private readonly SortedDictionary<T, List<K>> dictionary = new SortedDictionary<T, List<K>>();
 
 		// 重用list
+        // 相当于List<K>的对象池, 最多缓存100个
 		private readonly Queue<List<K>> queue = new Queue<List<K>>();
 
 		public SortedDictionary<T, List<K>> GetDictionary()

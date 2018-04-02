@@ -4,6 +4,9 @@ using System.Threading;
 
 namespace ETModel
 {
+    /// <summary>
+    /// 将方法放到主线程执行
+    /// </summary>
 	public class OneThreadSynchronizationContext : SynchronizationContext
 	{
 		// 线程同步队列,发送接收socket回调都放到该队列,由poll线程统一执行

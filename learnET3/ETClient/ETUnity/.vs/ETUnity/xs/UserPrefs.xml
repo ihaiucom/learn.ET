@@ -1,48 +1,39 @@
 ﻿<Properties StartupConfiguration="{A76ECEBD-FBC2-999C-BFCF-F498A520E3FF}|单元测试">
   <MonoDevelop.Ide.ItemProperties.ETUnity PreferredExecutionTarget="Unity.Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Init.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Component/Config/StartConfig.cs">
     <Files>
-      <File FileName="Assets/Scripts/Init.cs" Line="35" Column="27" />
-      <File FileName="Assets/Scripts/Entity/Game.cs" Line="54" Column="15" />
-      <File FileName="Assets/Scripts/Entity/Scene.cs" Line="27" Column="9" />
-      <File FileName="Assets/Scripts/Component/GlobalConfigComponent.cs" Line="21" Column="47" />
-      <File FileName="Assets/Scripts/Component/Config/GlobalProto.cs" Line="3" Column="15" />
-      <File FileName="Assets/Scripts/Module/UI/CanvasConfig.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Module/Config/ConfigComponent.cs" Line="27" Column="15" />
-      <File FileName="Assets/Scripts/Module/UI/UIComponent.cs" Line="96" Column="19" />
-      <File FileName="Assets/Scripts/UI/UILoading/Event/LoadingBeginEvent_CreateLoadingUI.cs" Line="3" Column="24" />
-      <File FileName="Assets/Scripts/Helper/BundleHelper.cs" Line="18" Column="18" />
-      <File FileName="Assets/Scripts/Base/Event/EventIdType.cs" Line="21" Column="23" />
-      <File FileName="Assets/Scripts/Other/Define.cs" Line="6" Column="22" />
+      <File FileName="Assets/Scripts/Base/IL/IAsyncStateMachineAdaptor.cs" Line="13" Column="56" />
+      <File FileName="Assets/Scripts/Base/IL/ILBindingAttribute.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Base/IL/ILAdapterAttribute.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Base/IL/IDisposableAdaptor.cs" Line="9" Column="63" />
+      <File FileName="Assets/ThirdParty/ILRuntime/ILRuntime/Runtime/Enviorment/CrossBindingAdaptor.cs" Line="18" Column="27" />
+      <File FileName="Assets/Scripts/Base/Math/AcosLookupTable.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Base/Math/Atan2LookupTable.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Base/Math/IntMath.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Other/AppType.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Module/Config/ConfigHelper.cs" Line="22" Column="33" />
+      <File FileName="Assets/Scripts/Component/GlobalConfigComponent.cs" Line="12" Column="36" />
+      <File FileName="Assets/Scripts/Init.cs" Line="25" Column="29" />
+      <File FileName="Hotfix/UI/UILogin/Component/UILoginComponent.cs" Line="36" Column="106" />
+      <File FileName="Assets/Scripts/Module/Config/ConfigAttribute.cs" Line="6" Column="15" />
+      <File FileName="Assets/Scripts/Module/Config/ConfigComponent.cs" Line="50" Column="24" />
+      <File FileName="Hotfix/Module/Config/ConfigComponent.cs" Line="44" Column="55" />
+      <File FileName="Assets/Scripts/Entity/Config/UnitConfig.cs" Line="3" Column="3" />
+      <File FileName="Hotfix/Entity/Config/UnitConfig.cs" Line="5" Column="3" />
+      <File FileName="Hotfix/Module/Config/ACategory.cs" Line="78" Column="26" />
+      <File FileName="Assets/Scripts/Module/Config/ACategory.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Module/Config/AConfigComponent.cs" Line="6" Column="24" />
+      <File FileName="Assets/Scripts/Module/Config/IConfig.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Component/Config/RunServerConfig.cs" Line="6" Column="30" />
+      <File FileName="Assets/Scripts/Component/Config/ClientConfig.cs" Line="6" Column="29" />
+      <File FileName="Assets/Scripts/Component/Config/DBConfig.cs" Line="6" Column="26" />
+      <File FileName="Assets/Scripts/Component/Config/GlobalProto.cs" Line="6" Column="17" />
+      <File FileName="Assets/Scripts/Component/Config/HttpConfig.cs" Line="6" Column="15" />
+      <File FileName="Assets/Editor/ServerCommandLineEditor/ServerCommandLineEditor.cs" Line="217" Column="5" />
+      <File FileName="Assets/Scripts/Component/Config/InnerConfig.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Component/Config/OuterConfig.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Component/Config/StartConfig.cs" Line="6" Column="15" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="ETUnity" expanded="True">
-            <Node name="Assembly-CSharp" expanded="True">
-              <Node name="Scripts" expanded="True">
-                <Node name="Base" expanded="True">
-                  <Node name="Event" expanded="True" />
-                </Node>
-                <Node name="Entity" expanded="True" />
-                <Node name="Helper" expanded="True" />
-                <Node name="Module" expanded="True">
-                  <Node name="Config" expanded="True" />
-                  <Node name="UI" expanded="True" />
-                </Node>
-                <Node name="Other" expanded="True" />
-                <Node name="UI" expanded="True">
-                  <Node name="UILoading" expanded="True">
-                    <Node name="Event" expanded="True" />
-                  </Node>
-                </Node>
-                <Node name="Init.cs" selected="True" />
-              </Node>
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
