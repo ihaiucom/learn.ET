@@ -20,8 +20,14 @@ namespace ETModel
 		}
 	}
 
+    /// <summary>
+    /// 卡线程 等待一段时间的辅助工具类
+    /// </summary>
 	public class TimerComponent : Component
 	{
+        /// <summary>
+        /// key: timer id, value: timer 
+        /// </summary>
 		private readonly Dictionary<long, Timer> timers = new Dictionary<long, Timer>();
 
 		/// <summary>
@@ -97,16 +103,28 @@ namespace ETModel
 			return tcs.Task;
 		}
 
+        /// <summary>
+        /// 注册一个等待time时间的线程任务
+        /// </summary>
+        /// <returns>线程任务</returns>
+        /// <param name="time">等待时间.</param>
+        /// <param name="cancellationToken">传播有关应取消操作的通知.</param>
 		public Task WaitAsync(long time, CancellationToken cancellationToken)
 		{
 			TaskCompletionSource<bool> tcs = new TaskCompletionSource<bool>();
 			Timer timer = new Timer { Id = IdGenerater.GenerateId(), Time = TimeHelper.Now() + time, tcs = tcs };
 			this.timers[timer.Id] = timer;
 			this.timeId.Add(timer.Time, timer.Id);
+            // 注册一个将在取消此 CancellationToken 时调用的委托。
 			cancellationToken.Register(() => { this.Remove(timer.Id); });
 			return tcs.Task;
 		}
 
+        /// <summary>
+        /// 注册一个等待time时间的线程任务
+        /// </summary>
+        /// <returns>线程任务</returns>
+        /// <param name="time">等待时间.</param>
 		public Task WaitAsync(long time)
 		{
 			TaskCompletionSource<bool> tcs = new TaskCompletionSource<bool>();

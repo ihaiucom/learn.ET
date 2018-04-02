@@ -1,6 +1,6 @@
 ﻿<Properties StartupConfiguration="{A76ECEBD-FBC2-999C-BFCF-F498A520E3FF}|单元测试">
   <MonoDevelop.Ide.ItemProperties.ETUnity PreferredExecutionTarget="Unity.Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Component/Config/StartConfig.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Module/Message/Network/AService.cs">
     <Files>
       <File FileName="Assets/Scripts/Base/IL/IAsyncStateMachineAdaptor.cs" Line="13" Column="56" />
       <File FileName="Assets/Scripts/Base/IL/ILBindingAttribute.cs" Line="1" Column="1" />
@@ -12,7 +12,7 @@
       <File FileName="Assets/Scripts/Base/Math/IntMath.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/Other/AppType.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/Module/Config/ConfigHelper.cs" Line="22" Column="33" />
-      <File FileName="Assets/Scripts/Component/GlobalConfigComponent.cs" Line="12" Column="36" />
+      <File FileName="Assets/Scripts/Component/GlobalConfigComponent.cs" Line="12" Column="48" />
       <File FileName="Assets/Scripts/Init.cs" Line="25" Column="29" />
       <File FileName="Hotfix/UI/UILogin/Component/UILoginComponent.cs" Line="36" Column="106" />
       <File FileName="Assets/Scripts/Module/Config/ConfigAttribute.cs" Line="6" Column="15" />
@@ -24,15 +24,30 @@
       <File FileName="Assets/Scripts/Module/Config/ACategory.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/Module/Config/AConfigComponent.cs" Line="6" Column="24" />
       <File FileName="Assets/Scripts/Module/Config/IConfig.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Component/Config/RunServerConfig.cs" Line="6" Column="30" />
-      <File FileName="Assets/Scripts/Component/Config/ClientConfig.cs" Line="6" Column="29" />
+      <File FileName="Assets/Scripts/Component/Config/RunServerConfig.cs" Line="6" Column="34" />
+      <File FileName="Assets/Scripts/Component/Config/ClientConfig.cs" Line="6" Column="45" />
       <File FileName="Assets/Scripts/Component/Config/DBConfig.cs" Line="6" Column="26" />
       <File FileName="Assets/Scripts/Component/Config/GlobalProto.cs" Line="6" Column="17" />
       <File FileName="Assets/Scripts/Component/Config/HttpConfig.cs" Line="6" Column="15" />
-      <File FileName="Assets/Editor/ServerCommandLineEditor/ServerCommandLineEditor.cs" Line="217" Column="5" />
+      <File FileName="Assets/Editor/ServerCommandLineEditor/ServerCommandLineEditor.cs" Line="86" Column="6" />
       <File FileName="Assets/Scripts/Component/Config/InnerConfig.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/Component/Config/OuterConfig.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/Component/Config/StartConfig.cs" Line="6" Column="15" />
+      <File FileName="Assets/Scripts/Base/Event/Env.cs" Line="8" Column="18" />
+      <File FileName="Assets/Scripts/Base/Event/EnvKey.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Base/Event/EventAttribute.cs" Line="6" Column="29" />
+      <File FileName="Assets/Scripts/Base/Event/EventIdType.cs" Line="3" Column="33" />
+      <File FileName="Assets/Scripts/Base/Event/IEvent.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Component/SceneChangeComponent.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Component/TimerComponent.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Module/Message/Network/KCP/KChannel.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Module/Message/Network/KCP/Kcp.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Module/Message/Network/KCP/KService.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Module/Message/Network/TCP/TService.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Module/Message/Network/TCP/TChannel.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Module/Message/Network/TCP/PacketParser.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Module/Message/Network/AChannel.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Module/Message/Network/AService.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

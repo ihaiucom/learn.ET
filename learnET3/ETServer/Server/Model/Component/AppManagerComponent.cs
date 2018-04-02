@@ -14,8 +14,16 @@ namespace ETModel
 		}
 	}
 
+    /// <summary>
+    /// 应用进程管理
+    /// 1. 启动所有StartConfigComponent所读取到的配置服，除了AppType.Manager除外
+    /// 2. 启动监控进程, 监控启动的进程,如果进程挂掉了,重新拉起
+    /// </summary>
 	public class AppManagerComponent: Component
 	{
+        /// <summary>
+        /// 服务进程存储<appId, 进程>
+        /// </summary>
 		private readonly Dictionary<int, Process> processes = new Dictionary<int, Process>();
 
 		public void Start()

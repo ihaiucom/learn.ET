@@ -12,6 +12,9 @@ namespace ETModel
 		}
 	}
 	
+    /// <summary>
+    /// 解析程序启动参数组件
+    /// </summary>
 	public class OptionComponent : Component
 	{
 		public Options Options { get; set; }

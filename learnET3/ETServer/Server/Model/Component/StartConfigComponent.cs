@@ -14,6 +14,9 @@ namespace ETModel
 		}
 	}
 	
+    /// <summary>
+    /// 启动服务配置读取器
+    /// </summary>
 	public class StartConfigComponent: Component
 	{
 		private Dictionary<int, StartConfig> configDict;

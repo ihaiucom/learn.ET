@@ -13,6 +13,9 @@ namespace ETModel
 		}
 	}
 
+    /// <summary>
+    /// 像是做压力测试的
+    /// </summary>
 	public class BenchmarkComponent: Component
 	{
 		private int k;
