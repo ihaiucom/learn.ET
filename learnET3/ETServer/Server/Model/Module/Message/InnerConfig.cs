@@ -3,6 +3,9 @@ using MongoDB.Bson.Serialization.Attributes;
 
 namespace ETModel
 {
+    /// <summary>
+    /// 相当于服务器的网关IP端口配置
+    /// </summary>
 	[BsonIgnoreExtraElements]
 	public class InnerConfig: AConfigComponent
 	{

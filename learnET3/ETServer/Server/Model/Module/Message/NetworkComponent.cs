@@ -6,6 +6,12 @@ using System.Threading.Tasks;
 
 namespace ETModel
 {
+    /// <summary>
+    /// 负责创建服务监听
+    /// 负责服务接收客户端连接
+    /// 负责客户端创建与服务器的连接
+    /// 服务器可以同时拥有上面的功能，当然你可以以把客户端变成和服务器一样。如果是Unity理论上可以直接建立局域网连接
+    /// </summary>
 	public abstract class NetworkComponent : Component
 	{
 		private AService Service;
@@ -57,6 +63,9 @@ namespace ETModel
 			}
 		}
 
+        /// <summary>
+        /// 启动接收客户端连接循环
+        /// </summary>
 		private async void StartAccept()
 		{
 			while (true)
@@ -70,6 +79,9 @@ namespace ETModel
 			}
 		}
 
+        /// <summary>
+        /// 接收客户端的连接
+        /// </summary>
 		public virtual async Task<Session> Accept()
 		{
 			AChannel channel = await this.Service.AcceptChannel();
@@ -100,6 +112,7 @@ namespace ETModel
 
 		/// <summary>
 		/// 创建一个新Session
+        /// 创建了一个与服务器的连接
 		/// </summary>
 		public virtual Session Create(IPEndPoint ipEndPoint)
 		{

@@ -4,6 +4,11 @@ using System.Collections.Generic;
 using MongoDB.Bson.Serialization.Attributes;
 namespace ETModel
 {
+    //================================
+    // 消息结构体定义 服务器 与 客户端
+    //--------------------------------
+
+
 	[Message(OuterOpcode.Actor_Test)]
 	[ProtoContract]
 	public partial class Actor_Test: IActorMessage

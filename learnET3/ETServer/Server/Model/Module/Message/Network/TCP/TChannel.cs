@@ -8,6 +8,10 @@ using System.Threading.Tasks;
 
 namespace ETModel
 {
+    /// <summary>
+    /// 用来保存连接关系，负责发送、接收消息
+    /// 
+    /// </summary>
 	public class TChannel : AChannel
 	{
 		private readonly TcpClient tcpClient;

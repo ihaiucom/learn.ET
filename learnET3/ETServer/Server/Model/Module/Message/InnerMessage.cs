@@ -4,6 +4,12 @@ using System.Collections.Generic;
 using MongoDB.Bson.Serialization.Attributes;
 namespace ETModel
 {
+
+    //================================
+    // 消息结构体定义--服务器与服务器
+    //--------------------------------
+
+
 /// <summary>
 /// 传送unit
 /// </summary>

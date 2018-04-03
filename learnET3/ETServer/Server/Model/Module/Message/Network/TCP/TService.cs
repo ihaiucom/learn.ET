@@ -7,6 +7,12 @@ using System.Threading.Tasks;
 
 namespace ETModel
 {
+    /// <summary>
+    /// 如果是服务器：创建TcpListener监听，监听连接
+    /// 如果是客户端：建立与服务器的连接，可以建立多个服务器的连接
+    /// 服务也可：建立其他服务器的连接
+    /// 当对方掉线时，将会把TChannel移除
+    /// </summary>
 	public sealed class TService: AService
 	{
 		private TcpListener acceptor;
@@ -51,6 +57,11 @@ namespace ETModel
 			return channel;
 		}
 
+        /// <summary>
+        /// 等待客户端连接
+        /// 由NetworkComponent启动检测连接，调这个方法
+        /// </summary>
+        /// <returns>The channel.</returns>
 		public override async Task<AChannel> AcceptChannel()
 		{
 			if (this.acceptor == null)
@@ -63,6 +74,10 @@ namespace ETModel
 			return channel;
 		}
 
+        /// <summary>
+        /// 连接服务器
+        /// </summary>
+        /// <returns>返回连接通道TChannel</returns>
 		public override AChannel ConnectChannel(IPEndPoint ipEndPoint)
 		{
 			TcpClient tcpClient = new TcpClient();
@@ -71,7 +86,6 @@ namespace ETModel
 
 			return channel;
 		}
-
 
 		public override void Remove(long id)
 		{

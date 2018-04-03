@@ -21,6 +21,9 @@ namespace ETModel
 		Accept,
 	}
 
+    /// <summary>
+    /// 用来保存连接关系，负责发送、接收消息
+    /// </summary>
 	public abstract class AChannel: ComponentWithId
 	{
 		public ChannelType ChannelType { get; }

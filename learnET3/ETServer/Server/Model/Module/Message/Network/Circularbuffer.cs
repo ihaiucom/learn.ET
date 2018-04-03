@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 
 namespace ETModel
 {
+    /// <summary>
+    /// 数据缓冲
+    /// 里面可以循环使用byte[]内存，减少GC
+    /// </summary>
     public class CircularBuffer: Stream
     {
         public int ChunkSize = 8192;

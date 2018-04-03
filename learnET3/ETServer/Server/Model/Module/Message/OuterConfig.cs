@@ -3,6 +3,11 @@ using MongoDB.Bson.Serialization.Attributes;
 
 namespace ETModel
 {
+    /// <summary>
+    /// 服务器 与 客户端 之间的IP端口配置
+    /// ipEndPoint 相当于登陆服
+    /// ipEndPoint2 相当于网关服
+    /// </summary>
 	[BsonIgnoreExtraElements]
 	public class OuterConfig: AConfigComponent
 	{

@@ -1,6 +1,6 @@
 ﻿<Properties StartupConfiguration="{A76ECEBD-FBC2-999C-BFCF-F498A520E3FF}|单元测试">
   <MonoDevelop.Ide.ItemProperties.ETUnity PreferredExecutionTarget="Unity.Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Module/Message/Network/AService.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Hotfix/Module/Message/HotfixMessage.cs">
     <Files>
       <File FileName="Assets/Scripts/Base/IL/IAsyncStateMachineAdaptor.cs" Line="13" Column="56" />
       <File FileName="Assets/Scripts/Base/IL/ILBindingAttribute.cs" Line="1" Column="1" />
@@ -43,11 +43,16 @@
       <File FileName="Assets/Scripts/Module/Message/Network/KCP/KChannel.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/Module/Message/Network/KCP/Kcp.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/Module/Message/Network/KCP/KService.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Module/Message/Network/TCP/TService.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Module/Message/Network/TCP/TChannel.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Module/Message/Network/TCP/TService.cs" Line="10" Column="30" />
+      <File FileName="Assets/Scripts/Module/Message/Network/TCP/TChannel.cs" Line="24" Column="14" />
       <File FileName="Assets/Scripts/Module/Message/Network/TCP/PacketParser.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Module/Message/Network/AChannel.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Module/Message/Network/AService.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Module/Message/Network/AChannel.cs" Line="10" Column="25" />
+      <File FileName="Assets/Scripts/Module/Message/Network/AService.cs" Line="19" Column="7" />
+      <File FileName="Assets/Scripts/Module/Message/NetworkComponent.cs" Line="36" Column="20" />
+      <File FileName="Assets/Scripts/Module/Message/NetOuterComponent.cs" Line="25" Column="9" />
+      <File FileName="Hotfix/Module/Message/MessageDispatherComponent.cs" Line="20" Column="4" />
+      <File FileName="Hotfix/Module/Message/HotfixMessageDispatcher.cs" Line="1" Column="1" />
+      <File FileName="Hotfix/Module/Message/HotfixMessage.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

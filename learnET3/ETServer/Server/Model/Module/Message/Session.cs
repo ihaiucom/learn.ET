@@ -25,13 +25,19 @@ namespace ETModel
 		}
 	}
 
+    /// <summary>
+    /// 这是封装当前应用终端与其他终端之间的通信接口
+    /// 负责接收消息，运行接收的消息
+    /// 负责发送消息，衍生出：回复消息、远程RPC
+    /// </summary>
 	public sealed class Session : Entity
 	{
 		private static int RpcId { get; set; }
 		private AChannel channel;
 
 		private readonly Dictionary<int, Action<IResponse>> requestCallback = new Dictionary<int, Action<IResponse>>();
-		private readonly List<byte[]> byteses = new List<byte[]>() { new byte[1], new byte[0], new byte[0]};
+		// flag, opcode, data
+        private readonly List<byte[]> byteses = new List<byte[]>() { new byte[1], new byte[0], new byte[0]};
 
 		public NetworkComponent Network
 		{
@@ -233,6 +239,9 @@ namespace ETModel
 			this.Send(0x00, message);
 		}
 
+        /// <summary>
+        /// 回复消息
+        /// </summary>
 		public void Reply(IResponse message)
 		{
 			if (this.IsDisposed)

@@ -8,6 +8,10 @@ namespace ETModel
 		PacketBody
 	}
 	
+    /// <summary>
+    /// 存储接收到数据 转成的包
+    /// 一个包里只包含一个消息的数据
+    /// </summary>
 	public struct Packet
 	{
 		public const int MinSize = 2;
@@ -44,12 +48,16 @@ namespace ETModel
 		}
 	}
 
+    /// <summary>
+    /// 解析CircularBuffer缓冲里的数据 转成包 Packet
+    /// </summary>
 	internal class PacketParser
 	{
 		private readonly CircularBuffer buffer;
 
 		private ushort packetSize;
 		private ParserState state;
+        //这个包在这里只创建一个
 		private Packet packet = new Packet(ushort.MaxValue);
 		private bool isOK;
 
