@@ -12,6 +12,9 @@ namespace ETModel
 		}
 	}
 
+    /// <summary>
+    /// 非Location服的 代理，负责ActorComponent向LocationComponent的注册Add、查找Get、移除Remove、锁Lock、解锁UnLock
+    /// </summary>
 	public class LocationProxyComponent : Component
 	{
 		public IPEndPoint LocationAddress;

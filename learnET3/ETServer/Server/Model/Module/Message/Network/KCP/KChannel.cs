@@ -40,11 +40,12 @@ namespace ETModel
 
 		private readonly byte[] cacheBytes = new byte[ushort.MaxValue];
 
+        //自己终端分配的ID
 		public uint Conn;
-
+        //远程分配的ID
 		public uint RemoteConn;
 
-		// accept
+		// accept, 接受客户端连接
 		public KChannel(uint conn, uint remoteConn, UdpClient socket, IPEndPoint remoteEndPoint, KService kService): base(kService, ChannelType.Accept)
 		{
 			this.Id = conn;
@@ -60,9 +61,10 @@ namespace ETModel
 			this.lastRecvTime = kService.TimeNow;
 		}
 
-		// connect
+		// connect, 连接服务器
 		public KChannel(uint conn, UdpClient socket, IPEndPoint remoteEndPoint, KService kService): base(kService, ChannelType.Connect)
 		{
+            // conn 是自己终端(客户端)随机的
 			this.Id = conn;
 			this.Conn = conn;
 			this.socket = socket;
@@ -72,6 +74,7 @@ namespace ETModel
 			this.lastRecvTime = kService.TimeNow;
 			this.Connect(kService.TimeNow);
 		}
+
 
 		public override void Dispose()
 		{
@@ -95,6 +98,10 @@ namespace ETModel
 			return (KService)this.service;
 		}
 
+        /// <summary>
+        /// 被服务器接受连接
+        /// </summary>
+        /// <param name="responseConn">服务器分配的连接ID， 远程连接ID.</param>
 		public void HandleConnnect(uint responseConn)
 		{
 			if (this.isConnected)
@@ -111,6 +118,10 @@ namespace ETModel
 			HandleSend();
 		}
 
+        /// <summary>
+        /// 向客户端发送 接受连接
+        /// </summary>
+        /// <param name="requestConn">Request conn.</param>
 		public void HandleAccept(uint requestConn)
 		{
 			cacheBytes.WriteTo(0, KcpProtocalType.ACK);
@@ -133,6 +144,9 @@ namespace ETModel
 			this.GetService().AddToNextTimeUpdate(timeNow + 200, this.Id);
 		}
 
+        /// <summary>
+        /// 向对方发送断开连接
+        /// </summary>
 		private void DisConnect()
 		{
 			cacheBytes.WriteTo(0, KcpProtocalType.FIN);

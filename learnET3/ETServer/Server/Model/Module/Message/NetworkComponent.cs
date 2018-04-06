@@ -24,6 +24,9 @@ namespace ETModel
 
 		public IMessageDispatcher MessageDispatcher { get; set; }
 
+        /// <summary>
+        /// 服务器
+        /// </summary>
 		public void Awake(NetworkProtocol protocol)
 		{
 			switch (protocol)
@@ -39,6 +42,9 @@ namespace ETModel
 			}
 		}
 
+        /// <summary>
+        /// 客户端连接服务器
+        /// </summary>
 		public void Awake(NetworkProtocol protocol, IPEndPoint ipEndPoint)
 		{
 			try

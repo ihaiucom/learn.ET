@@ -13,6 +13,9 @@ namespace ETModel
 		public abstract void Run();
 	}
 
+    /// <summary>
+    /// 位置锁任务
+    /// </summary>
 	public sealed class LocationLockTask : LocationTask
 	{
 		private readonly long key;
@@ -51,6 +54,9 @@ namespace ETModel
 		}
 	}
 
+    /// <summary>
+    /// 位置查询任务
+    /// </summary>
 	public sealed class LocationQueryTask : LocationTask
 	{
 		private readonly long key;
@@ -87,6 +93,9 @@ namespace ETModel
 
 	public class LocationComponent : Component
 	{
+        /// <summary>
+        /// ActorComponent.Id, appId
+        /// </summary>
 		private readonly Dictionary<long, int> locations = new Dictionary<long, int>();
 
 		private readonly Dictionary<long, int> lockDict = new Dictionary<long, int>();

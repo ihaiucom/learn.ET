@@ -9,11 +9,20 @@ namespace ETModel
 {
 	public static class KcpProtocalType
 	{
+        // 连接请求
 		public const uint SYN = 1;
 		public const uint ACK = 2;
+        // 断开连接
 		public const uint FIN = 3;
 	}
 
+
+    /// <summary>
+    /// C创建与服务器的连接
+    /// S接收终端连接
+    /// 接收消息处理
+    /// Update KChannel自己添加到更新队列里的通道
+    /// </summary>
 	public sealed class KService : AService
 	{
 		private uint IdGenerater = 1000;
@@ -31,11 +40,14 @@ namespace ETModel
 		// 下帧要更新的channel
 		private readonly HashSet<long> updateChannels = new HashSet<long>();
 
-		// 下次时间更新的channel
+		// 下次时间更新的channel <time, channelId>
 		private readonly MultiMap<long, long> timerId = new MultiMap<long, long>();
 
 		private readonly List<long> timeOutId = new List<long>();
 
+        /// <summary>
+        /// 客户端                                                                                                                          
+        /// </summary>
 		public KService(IPEndPoint ipEndPoint)
 		{
 			this.TimeNow = (uint)TimeHelper.Now();
@@ -54,6 +66,9 @@ namespace ETModel
 			this.StartRecv();
 		}
 
+        /// <summary>
+        /// 服务器
+        /// </summary>
 		public KService()
 		{
 			this.TimeNow = (uint)TimeHelper.Now();
@@ -81,6 +96,7 @@ namespace ETModel
 					return;
 				}
 
+                // 接收终端连接
 				UdpReceiveResult udpReceiveResult;
 				try
 				{
@@ -92,6 +108,7 @@ namespace ETModel
 					continue;
 				}
 
+                // 接收终端消息
 				try
 				{
 					int messageLength = udpReceiveResult.Buffer.Length;
@@ -108,6 +125,7 @@ namespace ETModel
 					// conn从1000开始，如果为1，2，3则是特殊包
 					switch (conn)
 					{
+                        // 连接请求
 						case KcpProtocalType.SYN:
 							// 长度!=8，不是accpet消息
 							if (messageLength != 8)
@@ -116,6 +134,7 @@ namespace ETModel
 							}
 							this.HandleAccept(udpReceiveResult);
 							break;
+                        // 被接收连接
 						case KcpProtocalType.ACK:
 							// 长度!=12，不是connect消息
 							if (messageLength != 12)
@@ -124,6 +143,7 @@ namespace ETModel
 							}
 							this.HandleConnect(udpReceiveResult);
 							break;
+                        // 断开连接
 						case KcpProtocalType.FIN:
 							// 长度!=12，不是DisConnect消息
 							if (messageLength != 12)
@@ -145,6 +165,10 @@ namespace ETModel
 			}
 		}
 
+        /// <summary>
+        /// 客户端接受到，服务器被接受连接
+        /// </summary>
+        /// <param name="udpReceiveResult">UDP receive result.</param>
 		private void HandleConnect(UdpReceiveResult udpReceiveResult)
 		{
 			uint requestConn = BitConverter.ToUInt32(udpReceiveResult.Buffer, 4);
@@ -159,6 +183,9 @@ namespace ETModel
 			kChannel.HandleConnnect(responseConn);
 		}
 
+        /// <summary>
+        /// 接受到对方要断开连接
+        /// </summary>
 		private void HandleDisConnect(UdpReceiveResult udpReceiveResult)
 		{
 			uint requestConn = BitConverter.ToUInt32(udpReceiveResult.Buffer, 8);
@@ -173,6 +200,9 @@ namespace ETModel
 			kChannel.Dispose();
 		}
 
+        /// <summary>
+        /// 接受消息
+        /// </summary>
 		private void HandleRecv(UdpReceiveResult udpReceiveResult, uint conn)
 		{
 			KChannel kChannel;
@@ -184,6 +214,9 @@ namespace ETModel
 			kChannel.HandleRecv(udpReceiveResult.Buffer, this.TimeNow);
 		}
 
+        /// <summary>
+        /// 处理连接请求
+        /// </summary>
 		private void HandleAccept(UdpReceiveResult udpReceiveResult)
 		{
 			if (this.acceptTcs == null)
@@ -208,6 +241,9 @@ namespace ETModel
 			t.SetResult(kChannel);
 		}
 
+        /// <summary>
+        /// 创建新连接的终端通道
+        /// </summary>
 		private KChannel CreateAcceptChannel(IPEndPoint remoteEndPoint, uint remoteConn)
 		{
 			KChannel channel = new KChannel(++this.IdGenerater, remoteConn, this.socket, remoteEndPoint, this);
@@ -221,6 +257,9 @@ namespace ETModel
 			return channel;
 		}
 
+        /// <summary>
+        /// 创建与服务器连接
+        /// </summary>
 		private KChannel CreateConnectChannel(IPEndPoint remoteEndPoint)
 		{
 			uint conv = (uint)RandomHelper.RandomNumber(1000, int.MaxValue);
@@ -258,6 +297,9 @@ namespace ETModel
 			return this.acceptTcs.Task;
 		}
 
+        /// <summary>
+        /// 连接服务器
+        /// </summary>
 		public override AChannel ConnectChannel(IPEndPoint ipEndPoint)
 		{
 			KChannel channel = this.CreateConnectChannel(ipEndPoint);

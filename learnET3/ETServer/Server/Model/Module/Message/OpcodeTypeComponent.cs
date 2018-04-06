@@ -11,6 +11,9 @@ namespace ETModel
 		}
 	}
 
+    /// <summary>
+    /// 启动时生成消息编号与消息类型的对应关系，为后续解析编译查找做准备
+    /// </summary>
 	public class OpcodeTypeComponent : Component
 	{
 		private readonly DoubleMap<ushort, Type> opcodeTypes = new DoubleMap<ushort, Type>();

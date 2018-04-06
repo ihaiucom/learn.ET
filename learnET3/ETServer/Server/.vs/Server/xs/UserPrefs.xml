@@ -1,75 +1,44 @@
 ﻿<Properties StartupConfiguration="{11464C2C-E0B6-476E-ABB1-87445E736B76}|Default">
   <MonoDevelop.Ide.ItemProperties.Server.App PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Model/Module/Message/Network/Circularbuffer.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Hotfix/Module/FrameSync/G2M_CreateUnitHandler.cs">
     <Files>
-      <File FileName="Model/Module/Message/Session.cs" Line="176" Column="40" />
-      <File FileName="Model/Module/Message/RpcException.cs" Line="9" Column="27" />
-      <File FileName="Model/Module/Actor/ActorTask.cs" Line="18" Column="43" />
-      <File FileName="Model/Component/BenchmarkComponent.cs" Line="55" Column="11" />
-      <File FileName="Hotfix/Handler/Actor_TransferHandler.cs" Line="43" Column="18" />
-      <File FileName="Model/Component/Unit/LockComponent.cs" Line="87" Column="31" />
-      <File FileName="Model/Module/Message/InnerMessage.cs" Line="69" Column="23" />
-      <File FileName="Model/Module/Location/LocationProxyComponent.cs" Line="51" Column="22" />
-      <File FileName="Hotfix/Module/FrameSync/C2G_EnterMapHandler.cs" Line="19" Column="66" />
-      <File FileName="Model/Module/DB/DBProxyComponent.cs" Line="42" Column="24" />
-      <File FileName="Model/Module/Message/IMessagePacker.cs" Line="5" Column="33" />
-      <File FileName="Model/Module/Message/MongoPacker.cs" Line="5" Column="15" />
-      <File FileName="Hotfix/Module/Message/NetInnerComponentSystem.cs" Line="46" Column="29" />
-      <File FileName="Model/Module/Message/ProtobufPacker.cs" Line="5" Column="29" />
-      <File FileName="Hotfix/Module/Message/NetOuterComponentSystem.cs" Line="39" Column="55" />
-      <File FileName="Hotfix/Module/Message/OuterMessageDispatcher.cs" Line="10" Column="17" />
-      <File FileName="Hotfix/Module/Message/InnerMessageDispatcher.cs" Line="8" Column="15" />
-      <File FileName="Model/Module/Message/IMessageDispatcher.cs" Line="5" Column="16" />
-      <File FileName="Model/Module/Message/NetworkComponent.cs" Line="25" Column="29" />
-      <File FileName="Model/Module/Message/IActorMessage.cs" Line="22" Column="19" />
-      <File FileName="Model/Module/Message/MessageInfo.cs" Line="8" Column="10" />
-      <File FileName="Model/Module/Message/Network/TCP/PacketParser.cs" Line="61" Column="18" />
-      <File FileName="Model/Module/Message/OpcodeHelper.cs" Line="1" Column="1" />
-      <File FileName="Model/Module/Message/Network/TCP/TChannel.cs" Line="150" Column="40" />
-      <File FileName="Model/Module/Message/Network/KCP/KChannel.cs" Line="30" Column="52" />
-      <File FileName="Model/Module/Message/Network/Circularbuffer.cs" Line="185" Column="26" />
+      <File FileName="Model/Module/Location/LocationProxyComponent.cs" Line="33" Column="24" />
+      <File FileName="App/Program.cs" Line="77" Column="31" />
+      <File FileName="Model/Module/Location/LocationComponent.cs" Line="105" Column="18" />
+      <File FileName="Model/Module/Actor/ActorManagerComponent.cs" Line="8" Column="15" />
+      <File FileName="Hotfix/Module/Location/ObjectAddRequestHandler.cs" Line="21" Column="4" />
+      <File FileName="Hotfix/Module/Location/ObjectGetRequestHandler.cs" Line="14" Column="47" />
+      <File FileName="Hotfix/Module/Location/ObjectLockRequestHandler.cs" Line="14" Column="29" />
+      <File FileName="Hotfix/Module/Location/ObjectRemoveRequestHandler.cs" Line="14" Column="29" />
+      <File FileName="Hotfix/Module/Location/ObjectUnLockRequestHandler.cs" Line="14" Column="29" />
+      <File FileName="Hotfix/Module/Actor/ActorComponentSystem.cs" Line="57" Column="39" />
+      <File FileName="Hotfix/Module/FrameSync/C2G_LoginGateHandler.cs" Line="24" Column="12" />
+      <File FileName="Hotfix/Module/FrameSync/G2M_CreateUnitHandler.cs" Line="16" Column="15" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Server" expanded="True">
-            <Node name="ThirdParty" expanded="True">
-              <Node name="MongodbDriver" expanded="True">
-                <Node name="MongoDB.Bson" expanded="True" />
-              </Node>
-            </Node>
+            <Node name="ThirdParty" expanded="True" />
             <Node name="Server.App" expanded="True" />
             <Node name="Server.Hotfix" expanded="True">
-              <Node name="Handler" expanded="True" />
               <Node name="Module" expanded="True">
                 <Node name="Actor" expanded="True" />
-                <Node name="FrameSync" expanded="True" />
-                <Node name="Message" expanded="True" />
+                <Node name="FrameSync" expanded="True">
+                  <Node name="G2M_CreateUnitHandler.cs" selected="True" />
+                </Node>
+                <Node name="Location" expanded="True" />
               </Node>
             </Node>
             <Node name="Server.Model" expanded="True">
-              <Node name="Base" expanded="True">
-                <Node name="Helper" expanded="True" />
-                <Node name="Object" expanded="True" />
-              </Node>
+              <Node name="Base" expanded="True" />
               <Node name="Component" expanded="True">
                 <Node name="Unit" expanded="True" />
               </Node>
               <Node name="Entity" expanded="True" />
               <Node name="Module" expanded="True">
                 <Node name="Actor" expanded="True" />
-                <Node name="Config" expanded="True" />
-                <Node name="DB" expanded="True" />
-                <Node name="FrameSync" expanded="True" />
                 <Node name="Location" expanded="True" />
-                <Node name="Message" expanded="True">
-                  <Node name="Network" expanded="True">
-                    <Node name="KCP" expanded="True" />
-                    <Node name="TCP" expanded="True" />
-                    <Node name="Circularbuffer.cs" selected="True" />
-                  </Node>
-                </Node>
-                <Node name="Numeric" expanded="True" />
               </Node>
               <Node name="Other" expanded="True" />
             </Node>

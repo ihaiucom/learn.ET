@@ -14,10 +14,16 @@ public class Kcp
 	public const int IKCP_ASK_TELL = 2; // need to send IKCP_CMD_WINS
 	public const int IKCP_WND_SND = 32;
 	public const int IKCP_WND_RCV = 32;
+    /// <summary>
+    /// 默认的mtu大小 1024
+    /// </summary>
 	public const int IKCP_MTU_DEF = 1024;
 	public const int IKCP_ACK_FAST = 3;
 	public const int IKCP_INTERVAL = 100;
-	public const int IKCP_OVERHEAD = 24;
+    /// <summary>
+    /// 假设最大包头大小是24
+    /// </summary>
+	public const int IKCP_OVERHEAD = 24; 
 	public const int IKCP_DEADLINK = 10;
 	public const int IKCP_THRESH_INIT = 2;
 	public const int IKCP_THRESH_MIN = 2;
@@ -85,6 +91,7 @@ public class Kcp
 		return bytes;
 	}
 
+
 	public static T[] slice<T>(T[] p, int start, int stop)
 	{
 		var arr = new T[stop - start];
@@ -106,6 +113,14 @@ public class Kcp
 		return bytes;
 	}
 
+    /// <summary>
+    /// 将数据添加到数组后面
+    /// 创建一个新数组，比原来的数组大1，将原来的数据引用拷贝到新数组，将新数据放最后面
+    /// </summary>
+    /// <returns>The append.</returns>
+    /// <param name="p">P.</param>
+    /// <param name="c">C.</param>
+    /// <typeparam name="T">The 1st type parameter.</typeparam>
 	public static T[] append<T>(T[] p, T c)
 	{
 		var arr = new T[p.Length + 1];
@@ -148,9 +163,18 @@ public class Kcp
 	// KCP Segment Definition
 	internal class Segment
 	{
+        /// <summary>
+        /// KChannel.RemoteConn
+        /// </summary>
 		internal UInt32 conv;
 		internal UInt32 cmd;
+        /// <summary>
+        /// 倒数第几个分包
+        /// </summary>
 		internal UInt32 frg;
+        /// <summary>
+        /// 窗口
+        /// </summary>
 		internal UInt32 wnd;
 		internal UInt32 ts;
 		internal UInt32 sn;
@@ -159,6 +183,9 @@ public class Kcp
 		internal UInt32 rto;
 		internal UInt32 fastack;
 		internal UInt32 xmit;
+        /// <summary>
+        /// 分包的内容数据
+        /// </summary>
 		internal byte[] data;
 
 		internal Segment(int size)
@@ -184,10 +211,21 @@ public class Kcp
 		}
 	}
 
-	// kcp members.
+    /// <summary>
+    /// kcp members.
+    /// KChannel.RemoteConn
+    /// </summary>
 	private readonly UInt32 conv;
-
+    /// <summary>
+    /// 估计是 分包大小的意思
+    /// 默认大小 IKCP_MTU_DEF = 1024
+    /// KChannel 默认设在的是512
+    /// </summary>
 	private UInt32 mtu;
+    /// <summary>
+    /// 分包内容大小, mtu - IKCP_OVERHEAD = 512 - 24 = 488
+    /// 如果分包数量大于等于255将不会发送
+    /// </summary>
 	private UInt32 mss;
 	private UInt32 state;
 	private UInt32 snd_una;
@@ -199,6 +237,10 @@ public class Kcp
 	private UInt32 rx_rttval;
 	private UInt32 rx_srtt;
 	private UInt32 rx_rto;
+    /// <summary>
+    /// nodelay ==0:IKCP_RTO_MIN = 100
+    /// 默认等于 IKCP_RTO_NDL = 30
+    /// </summary>
 	private UInt32 rx_minrto;
 	private UInt32 snd_wnd;
 	private UInt32 rcv_wnd;
@@ -206,9 +248,17 @@ public class Kcp
 	private UInt32 cwnd;
 	private UInt32 probe;
 	private UInt32 current;
+    /// <summary>
+    /// 以毫秒为单位的内部更新定时器间隔，默认为100ms, 10 大于 inrerval 小于 5000
+    /// KChannel默认设置10
+    /// </summary>
 	private UInt32 interval;
 	private UInt32 ts_flush;
 	private UInt32 xmit;
+    /// <summary>
+    /// 无延迟：0：禁用（默认），1：启用
+    /// KChannel默认设置1
+    /// </summary>
 	private UInt32 nodelay;
 	private UInt32 updated;
 	private UInt32 ts_probe;
@@ -216,6 +266,9 @@ public class Kcp
 	private readonly UInt32 dead_link;
 	private UInt32 incr;
 
+    /// <summary>
+    /// 发送分包队列
+    /// </summary>
 	private Segment[] snd_queue = new Segment[0];
 	private Segment[] rcv_queue = new Segment[0];
 	private Segment[] snd_buf = new Segment[0];
@@ -224,7 +277,14 @@ public class Kcp
 	private UInt32[] acklist = new UInt32[0];
 
 	private byte[] buffer;
+    /// <summary>
+    /// 重新发送：0：禁用快速重发（默认），1：启用快速重发, KChannel默认设置2
+    /// </summary>
 	private Int32 fastresend;
+
+    /// <summary>
+    /// 阻塞 0：正常拥塞控制（默认），1：禁用拥塞控制
+    /// </summary>
 	private Int32 nocwnd;
 
 	private Int32 logmask;
@@ -280,6 +340,7 @@ public class Kcp
 	}
 
 	// user/upper level recv: returns size, returns below zero for EAGAIN
+    // user / upper level recv：返回大小，对于EAGAIN返回低于零
 	public int Recv(byte[] buffer)
 	{
 		if (0 == rcv_queue.Length)
@@ -336,6 +397,7 @@ public class Kcp
 	}
 
 	// user/upper level send, returns below zero for error
+    //用户/上级发送，返回低于零的错误
 	public int Send(byte[] bytes, int index, int length)
 	{
 		if (0 == bytes.Length)
@@ -346,6 +408,7 @@ public class Kcp
 			return -1;
 		}
 
+        // 计算分包数量
 		int count = 0;
 
 		if (length < mss)
@@ -353,6 +416,7 @@ public class Kcp
 		else
 			count = (int)(length + mss - 1) / (int)mss;
 
+        // 分包数量超过255不处理
 		if (255 < count)
 			return -2;
 
@@ -363,6 +427,7 @@ public class Kcp
 
 		for (int i = 0; i < count; i++)
 		{
+            // 计算当前分包 大小
 			int size = 0;
 			if (length - offset > mss)
 				size = (int)mss;
@@ -370,6 +435,7 @@ public class Kcp
 				size = length - offset;
 
 			Segment seg = new Segment(size);
+            // 拷贝数据到分包
 			Array.Copy(bytes, offset + index, seg.data, 0, size);
 			offset += size;
 			seg.frg = (UInt32)(count - i - 1);
@@ -636,6 +702,11 @@ public class Kcp
 		return 0;
 	}
 
+    /// <summary>
+    /// Windows the unused.
+    /// 没使用的窗口
+    /// </summary>
+    /// <returns>The unused.</returns>
 	private Int32 wnd_unused()
 	{
 		if (rcv_queue.Length < rcv_wnd)
@@ -644,6 +715,7 @@ public class Kcp
 	}
 
 	// flush pending data
+    //刷新待处理的数据
 	private void flush()
 	{
 		uint current_ = current;
@@ -854,6 +926,9 @@ public class Kcp
 	// update state (call it repeatedly, every 10ms-100ms), or you can ask
 	// ikcp_check when to call it again (without ikcp_input/_send calling).
 	// 'current' - current timestamp in millisec.
+    //更新状态（反复调用，每10ms-100ms），或者你可以问
+    // ikcp_check何时再次调用它（没有ikcp_input / _send调用）。
+    //'current' - 以毫秒为单位的当前时间戳。
 	public void Update(UInt32 current_)
 	{
 		current = current_;
@@ -888,6 +963,13 @@ public class Kcp
 	// Important to reduce unnacessary ikcp_update invoking. use it to
 	// schedule ikcp_update (eg. implementing an epoll-like mechanism,
 	// or optimize ikcp_update when handling massive kcp connections)
+    //确定何时应该调用ikcp_update：
+    //当你以毫秒为单位调用ikcp_update时返回，如果有的话
+    //没有ikcp_input / _send调用。 你可以在那里调用ikcp_update
+    //时间，而不是重复地调用更新。
+    //重要的是减少不必要的ikcp_update调用。 用它来
+    //计划ikcp_update（例如，实现类似epoll的机制，
+    //在处理大量kcp连接时优化ikcp_update）
 	public UInt32 Check(UInt32 current_)
 	{
 		if (0 == updated)
@@ -955,6 +1037,11 @@ public class Kcp
 	// interval: internal update timer interval in millisec, default is 100ms
 	// resend: 0:disable fast resend(default), 1:enable fast resend
 	// nc: 0:normal congestion control(default), 1:disable congestion control
+    //最快：ikcp_nodelay（kcp，1，20，2，1）
+    //nodelay 无延迟：0：禁用（默认），1：启用
+    // interval：以毫秒为单位的内部更新定时器间隔，默认为100ms, 10 < inrerval < 5000
+    //resend 重新发送：0：禁用快速重发（默认），1：启用快速重发
+    // nc：0：正常拥塞控制（默认），1：禁用拥塞控制
 	public int NoDelay(int nodelay_, int interval_, int resend_, int nc_)
 	{
 		if (nodelay_ > 0)
