@@ -56,18 +56,32 @@ namespace ETModel
 		{
 			Game.Scene.GetComponent<ResourcesComponent>().LoadBundle($"code.unity3d");
 #if ILRuntime
-			this.appDomain = new ILRuntime.Runtime.Enviorment.AppDomain();
-			GameObject code = (GameObject)Game.Scene.GetComponent<ResourcesComponent>().GetAsset("code.unity3d", "Code");
-			byte[] assBytes = code.Get<TextAsset>("Hotfix.dll").bytes;
-			byte[] mdbBytes = code.Get<TextAsset>("Hotfix.pdb").bytes;
+            #if UNITY_STANDALONE_OSX || UNITY_EDITOR_OSX
+            this.appDomain = new ILRuntime.Runtime.Enviorment.AppDomain();
+            GameObject code = (GameObject)Game.Scene.GetComponent<ResourcesComponent>().GetAsset("code.unity3d", "Code");
+            byte[] assBytes = code.Get<TextAsset>("Hotfix.dll").bytes;
+            //byte[] mdbBytes = code.Get<TextAsset>("Hotfix.pdb").bytes;
 
-			using (MemoryStream fs = new MemoryStream(assBytes))
-			using (MemoryStream p = new MemoryStream(mdbBytes))
-			{
-				this.appDomain.LoadAssembly(fs, p, new Mono.Cecil.Pdb.PdbReaderProvider());
-			}
+            using (MemoryStream fs = new MemoryStream(assBytes))
+            {
+                this.appDomain.LoadAssembly(fs, null, new Mono.Cecil.Pdb.PdbReaderProvider());
+            }
 
-			this.start = new ILStaticMethod(this.appDomain, "ETHotfix.Init", "Start", 0);
+            this.start = new ILStaticMethod(this.appDomain, "ETHotfix.Init", "Start", 0);
+            #else
+            this.appDomain = new ILRuntime.Runtime.Enviorment.AppDomain();
+            GameObject code = (GameObject)Game.Scene.GetComponent<ResourcesComponent>().GetAsset("code.unity3d", "Code");
+            byte[] assBytes = code.Get<TextAsset>("Hotfix.dll").bytes;
+            byte[] mdbBytes = code.Get<TextAsset>("Hotfix.pdb").bytes;
+
+            using (MemoryStream fs = new MemoryStream(assBytes))
+            using (MemoryStream p = new MemoryStream(mdbBytes))
+            {
+                this.appDomain.LoadAssembly(fs, p, new Mono.Cecil.Pdb.PdbReaderProvider());
+            }
+
+            this.start = new ILStaticMethod(this.appDomain, "ETHotfix.Init", "Start", 0);
+            #endif
 #else
 			GameObject code = (GameObject)Game.Scene.GetComponent<ResourcesComponent>().GetAsset("code.unity3d", "Code");
 			byte[] assBytes = code.Get<TextAsset>("Hotfix.dll").bytes;

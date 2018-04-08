@@ -1,8 +1,10 @@
 ﻿<Properties StartupConfiguration="{A76ECEBD-FBC2-999C-BFCF-F498A520E3FF}|单元测试">
   <MonoDevelop.Ide.ItemProperties.ETUnity PreferredExecutionTarget="Unity.Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Hotfix/Module/Config/ConfigHelper.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Entity/Hotfix.cs">
     <Files>
-      <File FileName="Hotfix/Module/Config/ConfigHelper.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Base/Object/Entity.cs" Line="13" Column="39" />
+      <File FileName="Assets/Scripts/Base/Log.cs" Line="24" Column="1" />
+      <File FileName="Assets/Scripts/Entity/Hotfix.cs" Line="23" Column="10" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
