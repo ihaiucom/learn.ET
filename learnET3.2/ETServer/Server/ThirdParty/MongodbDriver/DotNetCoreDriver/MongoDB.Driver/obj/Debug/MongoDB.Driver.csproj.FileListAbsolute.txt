@@ -1,0 +1,9 @@
+/Users/zengfeng/workspaces/www/githubpages/learn.ET/ET/Bin/MongoDB.Driver.deps.json
+/Users/zengfeng/workspaces/www/githubpages/learn.ET/ET/Bin/MongoDB.Driver.dll
+/Users/zengfeng/workspaces/www/githubpages/learn.ET/ET/Bin/MongoDB.Driver.pdb
+/Users/zengfeng/workspaces/www/githubpages/learn.ET/ET/Server/ThirdParty/MongodbDriver/DotNetCoreDriver/MongoDB.Driver/obj/Debug/MongoDB.Driver.csprojResolveAssemblyReference.cache
+/Users/zengfeng/workspaces/www/githubpages/learn.ET/ET/Server/ThirdParty/MongodbDriver/DotNetCoreDriver/MongoDB.Driver/obj/Debug/MongoDB.Driver.csproj.CoreCompileInputs.cache
+/Users/zengfeng/workspaces/www/githubpages/learn.ET/ET/Server/ThirdParty/MongodbDriver/DotNetCoreDriver/MongoDB.Driver/obj/Debug/MongoDB.Driver.AssemblyInfoInputs.cache
+/Users/zengfeng/workspaces/www/githubpages/learn.ET/ET/Server/ThirdParty/MongodbDriver/DotNetCoreDriver/MongoDB.Driver/obj/Debug/MongoDB.Driver.AssemblyInfo.cs
+/Users/zengfeng/workspaces/www/githubpages/learn.ET/ET/Server/ThirdParty/MongodbDriver/DotNetCoreDriver/MongoDB.Driver/obj/Debug/MongoDB.Driver.dll
+/Users/zengfeng/workspaces/www/githubpages/learn.ET/ET/Server/ThirdParty/MongodbDriver/DotNetCoreDriver/MongoDB.Driver/obj/Debug/MongoDB.Driver.pdb

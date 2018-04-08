@@ -1,0 +1,7 @@
+!*.dll
+!*.exe
+.DS_Store
+*/.DS_Store
+ETUnity/Library
+ETUnity/Temp
+ETUnity/obj
