@@ -1,0 +1,58 @@
+2018-04-08 22:54:41.1651   (Program.cs:21) System.IO.FileNotFoundException: Could not find file '/Users/zengfeng/workspaces/www/githubpages/learn.ET/learnET3.2/ETServer/Server/App/Hotfix.dll'.
+File name: '/Users/zengfeng/workspaces/www/githubpages/learn.ET/learnET3.2/ETServer/Server/App/Hotfix.dll'
+   at Interop.ThrowExceptionForIoErrno(ErrorInfo errorInfo, String path, Boolean isDirectory, Func`2 errorRewriter)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String path, OpenFlags flags, Int32 mode)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.IO.File.InternalReadAllBytes(String path)
+   at System.IO.File.ReadAllBytes(String path)
+   at ETModel.DllHelper.GetHotfixAssembly() in /Users/zengfeng/workspaces/www/githubpages/learn.ET/learnET3.2/ETServer/Server/Model/Base/Helper/DllHelper.cs:line 12
+   at App.Program.Main(String[] args) in /Users/zengfeng/workspaces/www/githubpages/learn.ET/learnET3.2/ETServer/Server/App/Program.cs:line 21
+2018-04-08 22:57:58.1187   (Program.cs:21) System.IO.FileNotFoundException: Could not find file '/Users/zengfeng/workspaces/www/githubpages/learn.ET/learnET3.2/ETServer/Server/App/Hotfix.dll'.
+File name: '/Users/zengfeng/workspaces/www/githubpages/learn.ET/learnET3.2/ETServer/Server/App/Hotfix.dll'
+   at Interop.ThrowExceptionForIoErrno(ErrorInfo errorInfo, String path, Boolean isDirectory, Func`2 errorRewriter)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String path, OpenFlags flags, Int32 mode)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.IO.File.InternalReadAllBytes(String path)
+   at System.IO.File.ReadAllBytes(String path)
+   at ETModel.DllHelper.GetHotfixAssembly() in /Users/zengfeng/workspaces/www/githubpages/learn.ET/learnET3.2/ETServer/Server/Model/Base/Helper/DllHelper.cs:line 12
+   at App.Program.Main(String[] args) in /Users/zengfeng/workspaces/www/githubpages/learn.ET/learnET3.2/ETServer/Server/App/Program.cs:line 21
+2018-04-08 22:59:04.1362   (Program.cs:21) System.IO.FileNotFoundException: Could not find file '/Users/zengfeng/workspaces/www/githubpages/learn.ET/learnET3.2/ETServer/Server/App/Hotfix.dll'.
+File name: '/Users/zengfeng/workspaces/www/githubpages/learn.ET/learnET3.2/ETServer/Server/App/Hotfix.dll'
+   at Interop.ThrowExceptionForIoErrno(ErrorInfo errorInfo, String path, Boolean isDirectory, Func`2 errorRewriter)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String path, OpenFlags flags, Int32 mode)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.IO.File.InternalReadAllBytes(String path)
+   at System.IO.File.ReadAllBytes(String path)
+   at ETModel.DllHelper.GetHotfixAssembly() in /Users/zengfeng/workspaces/www/githubpages/learn.ET/learnET3.2/ETServer/Server/Model/Base/Helper/DllHelper.cs:line 12
+   at App.Program.Main(String[] args) in /Users/zengfeng/workspaces/www/githubpages/learn.ET/learnET3.2/ETServer/Server/App/Program.cs:line 21
+2018-04-08 23:00:23.2467   (EventSystem.cs:280) System.IO.DirectoryNotFoundException: Could not find a part of the path '/Users/zengfeng/workspaces/www/githubpages/learn.ET/learnET3.2/ETServer/Server/Config/StartConfig/LocalAllServer.txt'.
+   at Interop.ThrowExceptionForIoErrno(ErrorInfo errorInfo, String path, Boolean isDirectory, Func`2 errorRewriter)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String path, OpenFlags flags, Int32 mode)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks)
+   at System.IO.File.InternalReadAllText(String path, Encoding encoding)
+   at System.IO.File.ReadAllText(String path)
+   at ETModel.StartConfigComponent.Awake(String path, Int32 appId) in /Users/zengfeng/workspaces/www/githubpages/learn.ET/learnET3.2/ETServer/Server/Model/Component/StartConfigComponent.cs:line 39
+   at ETModel.StartConfigComponentSystem.Awake(StartConfigComponent self, String a, Int32 b) in /Users/zengfeng/workspaces/www/githubpages/learn.ET/learnET3.2/ETServer/Server/Model/Component/StartConfigComponent.cs:line 13
+   at ETModel.AwakeSystem`3.Run(Object o, A a, B b) in /Users/zengfeng/workspaces/www/githubpages/learn.ET/learnET3.2/ETServer/Server/Model/Base/Object/IAwakeSystem.cs:line 69
+   at ETModel.EventSystem.Awake[P1,P2](Component component, P1 p1, P2 p2) in /Users/zengfeng/workspaces/www/githubpages/learn.ET/learnET3.2/ETServer/Server/Model/Base/Object/EventSystem.cs:line 280
+2018-04-08 23:00:23.5924   (Program.cs:26) System.NullReferenceException: Object reference not set to an instance of an object.
+   at App.Program.Main(String[] args) in /Users/zengfeng/workspaces/www/githubpages/learn.ET/learnET3.2/ETServer/Server/App/Program.cs:line 26
+2018-04-08 23:01:00.1089   (EventSystem.cs:280) System.IO.DirectoryNotFoundException: Could not find a part of the path '/Users/zengfeng/workspaces/www/githubpages/learn.ET/learnET3.2/ETServer/Server/Config/StartConfig/LocalAllServer.txt'.
+   at Interop.ThrowExceptionForIoErrno(ErrorInfo errorInfo, String path, Boolean isDirectory, Func`2 errorRewriter)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String path, OpenFlags flags, Int32 mode)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks)
+   at System.IO.File.InternalReadAllText(String path, Encoding encoding)
+   at System.IO.File.ReadAllText(String path)
+   at ETModel.StartConfigComponent.Awake(String path, Int32 appId) in /Users/zengfeng/workspaces/www/githubpages/learn.ET/learnET3.2/ETServer/Server/Model/Component/StartConfigComponent.cs:line 39
+   at ETModel.StartConfigComponentSystem.Awake(StartConfigComponent self, String a, Int32 b) in /Users/zengfeng/workspaces/www/githubpages/learn.ET/learnET3.2/ETServer/Server/Model/Component/StartConfigComponent.cs:line 13
+   at ETModel.AwakeSystem`3.Run(Object o, A a, B b) in /Users/zengfeng/workspaces/www/githubpages/learn.ET/learnET3.2/ETServer/Server/Model/Base/Object/IAwakeSystem.cs:line 69
+   at ETModel.EventSystem.Awake[P1,P2](Component component, P1 p1, P2 p2) in /Users/zengfeng/workspaces/www/githubpages/learn.ET/learnET3.2/ETServer/Server/Model/Base/Object/EventSystem.cs:line 280
+2018-04-08 23:06:42.5310 AllServer 001 (Program.cs:39) server start........................ 1 AllServer
+2018-04-08 23:06:42.6941 AllServer 001 (ActorMessageDispatherComponentSystem.cs:39) apptype: AllServer

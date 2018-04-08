@@ -35315,3 +35315,5 @@ File name: '/Users/zengfeng/workspaces/www/githubpages/ET/Server/App/Hotfix.dll'
 2018-04-01 23:05:53.0238 AllServer 001 (InnerMessageDispatcher.cs:20) not found actor: 381259340514187
 2018-04-01 23:05:59.2506 AllServer 001 (Program.cs:39) server start........................ 1 AllServer
 2018-04-01 23:05:59.4101 AllServer 001 (ActorMessageDispatherComponent.cs:40) apptype: AllServer
+2018-04-08 23:02:24.4720 AllServer 001 (Program.cs:39) server start........................ 1 AllServer
+2018-04-08 23:02:24.6349 AllServer 001 (ActorMessageDispatherComponent.cs:40) apptype: AllServer

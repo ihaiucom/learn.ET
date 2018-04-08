@@ -11,3 +11,16 @@
 /Users/zengfeng/workspaces/www/githubpages/learn.ET/ET/Server/App/obj/Debug/Server.App.AssemblyInfo.cs
 /Users/zengfeng/workspaces/www/githubpages/learn.ET/ET/Server/App/obj/Debug/App.dll
 /Users/zengfeng/workspaces/www/githubpages/learn.ET/ET/Server/App/obj/Debug/App.pdb
+/Users/zengfeng/workspaces/www/githubpages/learn.ET/learnET3.2/ETServer/Bin/NLog.config
+/Users/zengfeng/workspaces/www/githubpages/learn.ET/learnET3.2/ETServer/Bin/App.dll.config
+/Users/zengfeng/workspaces/www/githubpages/learn.ET/learnET3.2/ETServer/Bin/App.deps.json
+/Users/zengfeng/workspaces/www/githubpages/learn.ET/learnET3.2/ETServer/Bin/App.runtimeconfig.json
+/Users/zengfeng/workspaces/www/githubpages/learn.ET/learnET3.2/ETServer/Bin/App.runtimeconfig.dev.json
+/Users/zengfeng/workspaces/www/githubpages/learn.ET/learnET3.2/ETServer/Bin/App.dll
+/Users/zengfeng/workspaces/www/githubpages/learn.ET/learnET3.2/ETServer/Bin/App.pdb
+/Users/zengfeng/workspaces/www/githubpages/learn.ET/learnET3.2/ETServer/Server/App/obj/Debug/Server.App.csprojResolveAssemblyReference.cache
+/Users/zengfeng/workspaces/www/githubpages/learn.ET/learnET3.2/ETServer/Server/App/obj/Debug/Server.App.csproj.CoreCompileInputs.cache
+/Users/zengfeng/workspaces/www/githubpages/learn.ET/learnET3.2/ETServer/Server/App/obj/Debug/Server.App.AssemblyInfoInputs.cache
+/Users/zengfeng/workspaces/www/githubpages/learn.ET/learnET3.2/ETServer/Server/App/obj/Debug/Server.App.AssemblyInfo.cs
+/Users/zengfeng/workspaces/www/githubpages/learn.ET/learnET3.2/ETServer/Server/App/obj/Debug/App.dll
+/Users/zengfeng/workspaces/www/githubpages/learn.ET/learnET3.2/ETServer/Server/App/obj/Debug/App.pdb

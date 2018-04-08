@@ -1,0 +1,6 @@
+/Users/zengfeng/workspaces/www/githubpages/learn.ET/learnET3.2/ETClient/ETUnity/Temp/UnityVS_bin/Debug/Hotfix.dll
+/Users/zengfeng/workspaces/www/githubpages/learn.ET/learnET3.2/ETClient/ETUnity/Temp/UnityVS_bin/Debug/Hotfix.pdb
+/Users/zengfeng/workspaces/www/githubpages/learn.ET/learnET3.2/ETClient/ETUnity/Hotfix/obj/Debug/ETUnity.Hotfix.csprojResolveAssemblyReference.cache
+/Users/zengfeng/workspaces/www/githubpages/learn.ET/learnET3.2/ETClient/ETUnity/Hotfix/obj/Debug/ETUnity.Hotfix.csproj.CoreCompileInputs.cache
+/Users/zengfeng/workspaces/www/githubpages/learn.ET/learnET3.2/ETClient/ETUnity/Hotfix/obj/Debug/Hotfix.dll
+/Users/zengfeng/workspaces/www/githubpages/learn.ET/learnET3.2/ETClient/ETUnity/Hotfix/obj/Debug/Hotfix.pdb

@@ -1,49 +1,20 @@
 ﻿<Properties StartupConfiguration="{11464C2C-E0B6-476E-ABB1-87445E736B76}|Default">
   <MonoDevelop.Ide.ItemProperties.Server.App PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Model/Module/FrameSync/RealmGateAddressComponent.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="App/Program.cs">
     <Files>
-      <File FileName="App/Program.cs" Line="62" Column="38" />
+      <File FileName="App/Program.cs" Line="26" Column="1" />
       <File FileName="Model/Module/FrameSync/GateSessionKeyComponent.cs" Line="5" Column="15" />
       <File FileName="Model/Module/FrameSync/PlayerComponent.cs" Line="15" Column="15" />
       <File FileName="Model/Other/AppType.cs" Line="11" Column="3" />
       <File FileName="Model/Module/FrameSync/RealmGateAddressComponent.cs" Line="5" Column="15" />
+      <File FileName="Model/Base/Helper/DllHelper.cs" Line="12" Column="41" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="Server" expanded="True">
-            <Node name="ThirdParty" expanded="True" />
-            <Node name="Server.App" expanded="True" />
-            <Node name="Server.Hotfix" expanded="True">
-              <Node name="Module" expanded="True">
-                <Node name="Message" expanded="True" />
-              </Node>
-            </Node>
-            <Node name="Server.Model" expanded="True">
-              <Node name="Base" expanded="True">
-                <Node name="Object" expanded="True" />
-              </Node>
-              <Node name="Component" expanded="True">
-                <Node name="Unit" expanded="True" />
-              </Node>
-              <Node name="Entity" expanded="True" />
-              <Node name="Module" expanded="True">
-                <Node name="Actor" expanded="True" />
-                <Node name="FrameSync" expanded="True">
-                  <Node name="RealmGateAddressComponent.cs" selected="True" />
-                </Node>
-                <Node name="Message" expanded="True" />
-              </Node>
-              <Node name="Other" expanded="True" />
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/zengfeng/workspaces/www/githubpages/learn.ET/learnET3/ETServer/Server/App/Program.cs" relfile="App/Program.cs" line="23" column="4" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />

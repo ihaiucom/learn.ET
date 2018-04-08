@@ -1,23 +1,6 @@
 ﻿<Properties StartupConfiguration="{A76ECEBD-FBC2-999C-BFCF-F498A520E3FF}|单元测试">
   <MonoDevelop.Ide.ItemProperties.ETUnity PreferredExecutionTarget="Unity.Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Hotfix/Init.cs">
-    <Files>
-      <File FileName="Assets/Scripts/Init.cs" Line="35" Column="33" />
-      <File FileName="Assets/Scripts/Entity/Game.cs" Line="51" Column="22" />
-      <File FileName="Assets/Scripts/Helper/BundleHelper.cs" Line="13" Column="50" />
-      <File FileName="Assets/Scripts/Base/Event/EventIdType.cs" Line="22" Column="23" />
-      <File FileName="Assets/Scripts/UI/UILoading/Event/LoadingFinishEvent_RemoveLoadingUI.cs" Line="8" Column="33" />
-      <File FileName="Assets/Scripts/Module/UI/UIComponent.cs" Line="73" Column="73" />
-      <File FileName="Assets/Scripts/UI/UILoading/Event/LoadingBeginEvent_CreateLoadingUI.cs" Line="8" Column="43" />
-      <File FileName="Hotfix/UI/UILogin/Factory/UILoginFactory.cs" Line="21" Column="30" />
-      <File FileName="Hotfix/UI/UILogin/Component/UILoginComponent.cs" Line="58" Column="65" />
-      <File FileName="Hotfix/Module/Message/SessionWrap.cs" Line="9" Column="15" />
-      <File FileName="Hotfix/Module/Message/SessionWrapComponent.cs" Line="1" Column="1" />
-      <File FileName="Hotfix/UI/UILobby/Component/UILobbyComponent.cs" Line="27" Column="52" />
-      <File FileName="Hotfix/UI/UILobby/Factory/UILobbyFactory.cs" Line="1" Column="1" />
-      <File FileName="Hotfix/Init.cs" Line="1" Column="1" />
-    </Files>
-  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
@@ -27,4 +10,7 @@
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.Assembly-CSharp-firstpass PreferredExecutionTarget="MonoDevelop.Default" />
   <MultiItemStartupConfigurations />
+  <DisabledProjects>
+    <String>Hotfix/Assembly-CSharp-Hotfix.csproj</String>
+  </DisabledProjects>
 </Properties>
