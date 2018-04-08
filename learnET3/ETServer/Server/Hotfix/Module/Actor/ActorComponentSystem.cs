@@ -64,6 +64,10 @@ namespace ETHotfix
 			await Game.Scene.GetComponent<LocationProxyComponent>().Remove(self.Entity.Id);
 		}
 
+        /// <summary>
+        /// 将消息添加到队列
+        /// 如果有处理任务在等待消息，就将该消息从队列里拿出来丢给它执行
+        /// </summary>
 		public static void Add(this ActorComponent self, ActorMessageInfo info)
 		{
 			self.queue.Enqueue(info);
@@ -78,6 +82,11 @@ namespace ETHotfix
 			t.SetResult(self.queue.Dequeue());
 		}
 
+        /// <summary>
+        /// 获取异步消息
+        /// 如果消息队列里有，就推出第一个消息反馈
+        /// 否则创建一个任务等待。直到Add方法添加消息，反馈
+        /// </summary>
 		private static Task<ActorMessageInfo> GetAsync(this ActorComponent self)
 		{
 			if (self.queue.Count > 0)
@@ -89,6 +98,10 @@ namespace ETHotfix
 			return self.tcs.Task;
 		}
 
+        /// <summary>
+        /// 消息处理循环
+        /// </summary>
+        /// <param name="self">Self.</param>
 		public static async void HandleAsync(this ActorComponent self)
 		{
 			while (true)
@@ -100,7 +113,7 @@ namespace ETHotfix
 				try
 				{
 					ActorMessageInfo info = await self.GetAsync();
-					// 返回null表示actor已经删除,协程要终止
+                    // 返回null表示actor已经删除,协程要终止, ActorComponent.Dispose发送的
 					if (info.Message == null)
 					{
 						return;

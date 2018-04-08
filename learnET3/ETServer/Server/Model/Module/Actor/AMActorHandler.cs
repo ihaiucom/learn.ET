@@ -3,6 +3,9 @@ using System.Threading.Tasks;
 
 namespace ETModel
 {
+    /// <summary>
+    /// Actor消息处理器
+    /// </summary>
 	public abstract class AMActorHandler<E, Message>: IMActorHandler where E: Entity where Message : class 
 	{
 		protected abstract Task Run(E entity, Message message);
@@ -42,6 +45,9 @@ namespace ETModel
 		}
 	}
 
+    /// <summary>
+    /// Actor消息处理器
+    /// </summary>
 	public abstract class AMActorRpcHandler<E, Request, Response>: IMActorHandler where E: Entity where Request: class, IActorRequest where Response : class, IActorResponse
 	{
 		protected static void ReplyError(Response response, Exception e, Action<Response> reply)

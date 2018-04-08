@@ -14,7 +14,7 @@ namespace ETModel
 	}
 
     /// <summary>
-    /// 位置锁任务
+    /// 位置锁任务LockAsync，当该key已经被锁了时，将创建该任务等待
     /// </summary>
 	public sealed class LocationLockTask : LocationTask
 	{
@@ -55,7 +55,7 @@ namespace ETModel
 	}
 
     /// <summary>
-    /// 位置查询任务
+    /// 位置查询任务GetAsync，当该key已经被锁了时，将创建该任务等待
     /// </summary>
 	public sealed class LocationQueryTask : LocationTask
 	{
@@ -94,10 +94,13 @@ namespace ETModel
 	public class LocationComponent : Component
 	{
         /// <summary>
-        /// ActorComponent.Id, appId
+        /// ActorComponent.Entity.Id, appId
         /// </summary>
 		private readonly Dictionary<long, int> locations = new Dictionary<long, int>();
 
+        /// <summary>
+        /// ActorComponent.Entity.Id, appId
+        /// </summary>
 		private readonly Dictionary<long, int> lockDict = new Dictionary<long, int>();
 
 		private readonly Dictionary<long, Queue<LocationTask>> taskQueues = new Dictionary<long, Queue<LocationTask>>();

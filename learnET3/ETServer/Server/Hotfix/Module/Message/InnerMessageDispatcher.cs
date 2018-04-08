@@ -3,6 +3,9 @@ using ETModel;
 
 namespace ETHotfix
 {
+    /// <summary>
+    /// 服务器与服务器执行的消息通信派发
+    /// </summary>
 	public class InnerMessageDispatcher: IMessageDispatcher
 	{
 		public void Dispatch(Session session, Packet packet)

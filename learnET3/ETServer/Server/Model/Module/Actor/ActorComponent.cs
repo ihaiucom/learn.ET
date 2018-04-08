@@ -20,6 +20,7 @@ namespace ETModel
 		// 队列处理消息
 		public Queue<ActorMessageInfo> queue;
 
+        // ActorComponentEx.HandleAsync 读取消息任务
 		public TaskCompletionSource<ActorMessageInfo> tcs;
 
 		public override void Dispose()

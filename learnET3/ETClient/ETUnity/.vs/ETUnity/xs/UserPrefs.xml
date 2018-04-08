@@ -1,58 +1,21 @@
 ﻿<Properties StartupConfiguration="{A76ECEBD-FBC2-999C-BFCF-F498A520E3FF}|单元测试">
   <MonoDevelop.Ide.ItemProperties.ETUnity PreferredExecutionTarget="Unity.Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Hotfix/Module/Message/HotfixMessage.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Hotfix/Init.cs">
     <Files>
-      <File FileName="Assets/Scripts/Base/IL/IAsyncStateMachineAdaptor.cs" Line="13" Column="56" />
-      <File FileName="Assets/Scripts/Base/IL/ILBindingAttribute.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Base/IL/ILAdapterAttribute.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Base/IL/IDisposableAdaptor.cs" Line="9" Column="63" />
-      <File FileName="Assets/ThirdParty/ILRuntime/ILRuntime/Runtime/Enviorment/CrossBindingAdaptor.cs" Line="18" Column="27" />
-      <File FileName="Assets/Scripts/Base/Math/AcosLookupTable.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Base/Math/Atan2LookupTable.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Base/Math/IntMath.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Other/AppType.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Module/Config/ConfigHelper.cs" Line="22" Column="33" />
-      <File FileName="Assets/Scripts/Component/GlobalConfigComponent.cs" Line="12" Column="48" />
-      <File FileName="Assets/Scripts/Init.cs" Line="25" Column="29" />
-      <File FileName="Hotfix/UI/UILogin/Component/UILoginComponent.cs" Line="36" Column="106" />
-      <File FileName="Assets/Scripts/Module/Config/ConfigAttribute.cs" Line="6" Column="15" />
-      <File FileName="Assets/Scripts/Module/Config/ConfigComponent.cs" Line="50" Column="24" />
-      <File FileName="Hotfix/Module/Config/ConfigComponent.cs" Line="44" Column="55" />
-      <File FileName="Assets/Scripts/Entity/Config/UnitConfig.cs" Line="3" Column="3" />
-      <File FileName="Hotfix/Entity/Config/UnitConfig.cs" Line="5" Column="3" />
-      <File FileName="Hotfix/Module/Config/ACategory.cs" Line="78" Column="26" />
-      <File FileName="Assets/Scripts/Module/Config/ACategory.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Module/Config/AConfigComponent.cs" Line="6" Column="24" />
-      <File FileName="Assets/Scripts/Module/Config/IConfig.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Component/Config/RunServerConfig.cs" Line="6" Column="34" />
-      <File FileName="Assets/Scripts/Component/Config/ClientConfig.cs" Line="6" Column="45" />
-      <File FileName="Assets/Scripts/Component/Config/DBConfig.cs" Line="6" Column="26" />
-      <File FileName="Assets/Scripts/Component/Config/GlobalProto.cs" Line="6" Column="17" />
-      <File FileName="Assets/Scripts/Component/Config/HttpConfig.cs" Line="6" Column="15" />
-      <File FileName="Assets/Editor/ServerCommandLineEditor/ServerCommandLineEditor.cs" Line="86" Column="6" />
-      <File FileName="Assets/Scripts/Component/Config/InnerConfig.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Component/Config/OuterConfig.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Component/Config/StartConfig.cs" Line="6" Column="15" />
-      <File FileName="Assets/Scripts/Base/Event/Env.cs" Line="8" Column="18" />
-      <File FileName="Assets/Scripts/Base/Event/EnvKey.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Base/Event/EventAttribute.cs" Line="6" Column="29" />
-      <File FileName="Assets/Scripts/Base/Event/EventIdType.cs" Line="3" Column="33" />
-      <File FileName="Assets/Scripts/Base/Event/IEvent.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Component/SceneChangeComponent.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Component/TimerComponent.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Module/Message/Network/KCP/KChannel.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Module/Message/Network/KCP/Kcp.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Module/Message/Network/KCP/KService.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Module/Message/Network/TCP/TService.cs" Line="10" Column="30" />
-      <File FileName="Assets/Scripts/Module/Message/Network/TCP/TChannel.cs" Line="24" Column="14" />
-      <File FileName="Assets/Scripts/Module/Message/Network/TCP/PacketParser.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Module/Message/Network/AChannel.cs" Line="10" Column="25" />
-      <File FileName="Assets/Scripts/Module/Message/Network/AService.cs" Line="19" Column="7" />
-      <File FileName="Assets/Scripts/Module/Message/NetworkComponent.cs" Line="36" Column="20" />
-      <File FileName="Assets/Scripts/Module/Message/NetOuterComponent.cs" Line="25" Column="9" />
-      <File FileName="Hotfix/Module/Message/MessageDispatherComponent.cs" Line="20" Column="4" />
-      <File FileName="Hotfix/Module/Message/HotfixMessageDispatcher.cs" Line="1" Column="1" />
-      <File FileName="Hotfix/Module/Message/HotfixMessage.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Init.cs" Line="35" Column="33" />
+      <File FileName="Assets/Scripts/Entity/Game.cs" Line="51" Column="22" />
+      <File FileName="Assets/Scripts/Helper/BundleHelper.cs" Line="13" Column="50" />
+      <File FileName="Assets/Scripts/Base/Event/EventIdType.cs" Line="22" Column="23" />
+      <File FileName="Assets/Scripts/UI/UILoading/Event/LoadingFinishEvent_RemoveLoadingUI.cs" Line="8" Column="33" />
+      <File FileName="Assets/Scripts/Module/UI/UIComponent.cs" Line="73" Column="73" />
+      <File FileName="Assets/Scripts/UI/UILoading/Event/LoadingBeginEvent_CreateLoadingUI.cs" Line="8" Column="43" />
+      <File FileName="Hotfix/UI/UILogin/Factory/UILoginFactory.cs" Line="21" Column="30" />
+      <File FileName="Hotfix/UI/UILogin/Component/UILoginComponent.cs" Line="58" Column="65" />
+      <File FileName="Hotfix/Module/Message/SessionWrap.cs" Line="9" Column="15" />
+      <File FileName="Hotfix/Module/Message/SessionWrapComponent.cs" Line="1" Column="1" />
+      <File FileName="Hotfix/UI/UILobby/Component/UILobbyComponent.cs" Line="27" Column="52" />
+      <File FileName="Hotfix/UI/UILobby/Factory/UILobbyFactory.cs" Line="1" Column="1" />
+      <File FileName="Hotfix/Init.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
